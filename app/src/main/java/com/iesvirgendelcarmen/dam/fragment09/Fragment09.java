@@ -19,8 +19,11 @@ public class Fragment09 extends FragmentActivity {
         setContentView(R.layout.activity_fragment09);
 
         listaFragmentos = new ArrayList<Fragment>();
+        listaFragmentos.add(new Fragmento3());
         listaFragmentos.add(new Fragmento1());
+        listaFragmentos.add(new Fragmento3());
         listaFragmentos.add(new Fragmento2());
+        listaFragmentos.add(new Fragmento3());
         paginador = new Adaptador(getSupportFragmentManager(),listaFragmentos);
         visor = (ViewPager) findViewById(R.id.viewPager);
         visor.setAdapter(paginador);
